@@ -53,10 +53,10 @@ This project uses several COMP9001 concepts:
 * Program structure across multiple files
 
 The main advanced topics are:
-1. **Advanced flow control**: `try` and `except` are used in `display_price_menu` to handle non-numeric price input. `break` and `continue` are used throughout the action menus.
-2. **File I/O**: the final result is saved to `result.txt` after each game using file write operations.
-3. **Testing**: `test_cafe.py` checks core game logic including profit calculation, price-sales relationship, and staff management rules.
-
+1. **More Flow Control (Week 8)**: `try` and `except` handle non-numeric price input in `display_price_menu`. `break` and `continue` are used throughout action menus.
+2. **File I/O (Week 9)**: game result is saved to `result.txt` after each playthrough using file write operations.
+3. **Testing (Week 10)**: `test_cafe.py` checks core logic including profit calculation, price-sales relationship, and staff management rules.
+   
 The project also uses classes and objects through the `Cafe` class in `cafe.py`.
 
 ## File Structure
