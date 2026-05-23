@@ -1,4 +1,4 @@
-# Brewtown Cafe Simulator
+# Brewtown Manager
 ## Project Description
 Brewtown Cafe Simulator is a terminal-based cafe management game developed in Python for the COMP9001 Final Project. The player takes on the role of a trainee manager at Brewtown Cafe, a struggling local coffee shop facing long queues, falling profits, and unhappy customers. Over a simulated 3-month period, players make business decisions every fortnight, including adjusting menu prices, hiring or reducing staff, and setting marketing strategies.
 
