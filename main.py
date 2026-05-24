@@ -9,11 +9,12 @@ from ui import display_intro, display_welcome, display_report,display_action_men
 display_intro()
 
 # Get player name for personalised dialogue
+print("Mia: Hi! I'm Mia, one of the staff here at Brewtown Cafe. You must be the new trainee manager! We've been waiting for you...")
 while True:
-    player_name = input("Mia: Hi! I'm Mia, one of the staff here at Brewtown Cafe. You must be the new trainee manager! We've been waiting for you...\n     What's your name? ").strip()
+    player_name = input("     What's your name? ").strip()
     if player_name != "":
         break
-    print("Mia: I didn't catch that — could you tell me your name?\n")
+    print("Mia: I didn't catch that — could you tell me your name?")
 
 # Mission briefing and win conditions
 display_welcome(player_name)
@@ -74,4 +75,3 @@ while True:
 
     else:
         print("\nMia: Hmm... I didn't quite catch that. Could you answer with yes or no?\n")
-
