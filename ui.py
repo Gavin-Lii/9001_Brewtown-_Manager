@@ -81,7 +81,7 @@ def display_report(cafe, player_name, round_number):
     while index < len(cafe.menu):
         item = cafe.menu[index]
         sales = cafe.calculate_item_sales(item)
-        print(f"{index + 1}. {item['name']:<20} ${item['price']}  ({sales} sold)")
+        print(f"{index + 1}. {item['name']:<20} ${item['price']:>7}  ({sales:>3} sold)")
         index+=1
     time.sleep(0.5)
 
@@ -165,7 +165,7 @@ def display_price_menu(cafe):
     while True:
         print("\n☕ MENU PRICES")
         print("─" * 52)
-        print(f"  {'#':<4} {'Name':<20} {'Price':>6}  {'Cost':>5}  {'Margin':>7}")
+        print(f"  {'#':<4} {'Name':<20} {'Price':>8}  {'Cost':>5}  {'Margin':>7}")
         print("─" * 52)
         index = 0
         while index < len(cafe.menu):
@@ -174,7 +174,7 @@ def display_price_menu(cafe):
             # Flag items where price is more than $2 above original — triggers satisfaction penalty
             flag = " ⚠" if item["price"] > item["base_price"] + 2 else ""
             print(
-                f"  {index + 1:<4} {item['name']:<20} ${item['price']:>5.2f}  ${item['cost']:>4.2f}  ${margin:>5.2f}{flag}")
+                f"  {index + 1:<4} {item['name']:<20} ${item['price']:>7.2f}  ${item['cost']:>4.2f}  ${margin:>6.2f}{flag}")
             index += 1
         print("─" * 52)
         print("  ⚠  Raising price will reduce sales volume.")
